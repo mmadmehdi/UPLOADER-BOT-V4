@@ -26,7 +26,7 @@ class Config(object):
     OUO_IO_API_KEY = ""
     MAX_MESSAGE_LENGTH = 4096
     PROCESS_MAX_TIMEOUT = 3600
-    DEF_WATER_MARK_FILE = "@UploaderXNTBot"
+    DEF_WATER_MARK_FILE = "@UploaderTurboBot"
 
     ADMIN = set(
         int(x) for x in environ.get("ADMIN", "").split()
@@ -38,7 +38,7 @@ class Config(object):
         if x.isdigit()
     )
 
-    DATABASE_URL = os.environ.get("DATABASE_URL", "-1002798735032")
+    DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://mrgolestani85_db_user:ZZxFRBk7MXfAUKT2@cluster0.f14fg4m.mongodb.net/?appName=Cluster0")
 
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002798735032"))
     LOGGER = logging
