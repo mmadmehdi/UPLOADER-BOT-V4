@@ -11,9 +11,9 @@ logging.basicConfig(
 
 class Config(object):
     
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "8859359842:AAGpTc6DJFEtLw1ehq6npUWbtxUl7oYEQ0Q")
-    API_ID = int(os.environ.get("API_ID",2040 ))
-    API_HASH = os.environ.get("API_HASH", "b18441a1ff607e10a989891a5462e627")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+    API_ID = int(os.environ.get("API_ID", ))
+    API_HASH = os.environ.get("API_HASH", "")
     
     DOWNLOAD_LOCATION = "./DOWNLOADS"
     MAX_FILE_SIZE = 2194304000
@@ -26,7 +26,7 @@ class Config(object):
     OUO_IO_API_KEY = ""
     MAX_MESSAGE_LENGTH = 4096
     PROCESS_MAX_TIMEOUT = 3600
-    DEF_WATER_MARK_FILE = "@UploaderTurboBot"
+    DEF_WATER_MARK_FILE = "@UploaderXNTBot"
 
     ADMIN = set(
         int(x) for x in environ.get("ADMIN", "").split()
@@ -38,16 +38,16 @@ class Config(object):
         if x.isdigit()
     )
 
-    DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://mrgolestani85_db_user:ZZxFRBk7MXfAUKT2@cluster0.f14fg4m.mongodb.net/?appName=Cluster0")
+    DATABASE_URL = os.environ.get("DATABASE_URL", "")
 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002798735032"))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
     LOGGER = logging
-    OWNER_ID = int(os.environ.get("OWNER_ID", "1625734977"))
-    SESSION_NAME = "UploaderTurboBot"
-    UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "-1002798735032")
+    OWNER_ID = int(os.environ.get("OWNER_ID", ""))
+    SESSION_NAME = "UploaderXNTBot"
+    UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "")
 
     TG_MIN_FILE_SIZE = 2194304000
-    BOT_USERNAME = os.environ.get("BOT_USERNAME", "UploaderTurboBot")
+    BOT_USERNAME = os.environ.get("BOT_USERNAME", "")
     ADL_BOT_RQ = {}
 
     # Set False off else True
